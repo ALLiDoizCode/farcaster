@@ -1,0 +1,27 @@
+[package]
+name = "ic_eth"
+version = "0.0.0"
+description = "Rust utility canister"
+authors = ["DFINITY Foundation"]
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+candid = "0.8.2"
+ic-cdk = "0.6.0"
+ic-cdk-macros = "0.7"
+url = "2.3"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+hex = "0.4"
+ethers-core = "2.0"
+getrandom = { version = "0.2", features = ["custom"] }
+sha2 = "0.10.8"
+libsecp256k1 = { version = "0.7.1", features = ["lazy-static-context"] }
+ic-web3 = { git = "https://github.com/rocklabs-io/ic-web3" }
+serde_bytes = "0.11.14"
+protobuf = "2.25.2"
+blake3 = "1.5.0"
+ed25519-dalek = {version = "2.0.0", features = ["rand_core"]}

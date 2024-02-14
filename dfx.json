@@ -1,0 +1,14 @@
+{
+  "canisters": {
+    "farcaster": {
+      "type": "rust",
+      "candid": "canisters/ic_eth/ic_eth.did",
+      "package": "ic_eth"
+    }
+  },
+  "defaults": {
+    "build": {
+      "packtool": ""
+    }
+  }
+}
